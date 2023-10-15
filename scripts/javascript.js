@@ -221,7 +221,7 @@ multiple.addEventListener(("click"), () => {
 });
 
 let divides = document.querySelector("#divides");
-plus.addEventListener(("click"), () => {
+divides.addEventListener(("click"), () => {
     touched = true;
     operator = "/";
 });
