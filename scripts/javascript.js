@@ -4,95 +4,198 @@ let operator;
 let display;
 let variableDisplay = "0";
 let touched = false;
-display = document.querySelector("#display");
+display = document.querySelector("#disp");
+display = document.createElement("div");
+display.textContent = variableDisplay;
+disp.appendChild(display);
 let zero = document.querySelector("#zero");
 zero.addEventListener("click", () => {
     if ( touched == false ) {
-        return firstNumber = firstNumber + "0";
+        if ( firstNumber == "0") {
+            return firstNumber = "0";
+        }
+        else {
+            return firstNumber = firstNumber + "0";
+        }
     }
     else if ( touched == true) {
-        return secondNumber = secondNumber + "0";
+        if ( firstNumber == "0") {
+            return firstNumber = "0";
+        }
+        else {
+            return firstNumber = firstNumber + "0";
+        }
     }
 });
 let one = document.querySelector("#one");
 one.addEventListener("click", () => {
     if ( touched === false ) {
-        return firstNumber = firstNumber + "1";
+        if ( firstNumber == "0") {
+            return firstNumber = "0";
+        }
+        else {
+            return firstNumber = firstNumber + "0";
+        }
     }
     else if ( touched === true) {
-        return secondNumber = secondNumber + "1";
+        if ( firstNumber == "0") {
+            return firstNumber = "0";
+        }
+        else {
+            return firstNumber = firstNumber + "0";
+        }
     }
 });
 let two = document.querySelector("#two");
 two.addEventListener("click", () => {
     if ( touched === false ) {
-        return firstNumber = firstNumber + "2";
+        if ( firstNumber == "0") {
+            return firstNumber = "0";
+        }
+        else {
+            return firstNumber = firstNumber + "0";
+        }
     }
     else if ( touched === true) {
-        return secondNumber = secondNumber + "2";
+        if ( firstNumber == "0") {
+            return firstNumber = "0";
+        }
+        else {
+            return firstNumber = firstNumber + "0";
+        }
     }
 });
 let three = document.querySelector("#three");
 three.addEventListener("click", () => {
     if ( touched === false ) {
-        return firstNumber = firstNumber + "3";
+        if ( firstNumber == "0") {
+            return firstNumber = "0";
+        }
+        else {
+            return firstNumber = firstNumber + "0";
+        }
     }
     else if ( touched === true) {
-        return secondNumber = secondNumber + "3";
+        if ( firstNumber == "0") {
+            return firstNumber = "0";
+        }
+        else {
+            return firstNumber = firstNumber + "0";
+        }
     }
 });
 let four = document.querySelector("#four");
 four.addEventListener("click", () => {
     if ( touched === false ) {
-        return firstNumber = firstNumber + "4";
+        if ( firstNumber == "0") {
+            return firstNumber = "0";
+        }
+        else {
+            return firstNumber = firstNumber + "0";
+        }
     }
     else if ( touched === true) {
-        return secondNumber = secondNumber + "4";
+        if ( firstNumber == "0") {
+            return firstNumber = "0";
+        }
+        else {
+            return firstNumber = firstNumber + "0";
+        }
     }
 });
 let five = document.querySelector("#five");
 five.addEventListener("click", () => {
     if ( touched === false ) {
-        return firstNumber = firstNumber + "5";
+        if ( firstNumber == "0") {
+            return firstNumber = "0";
+        }
+        else {
+            return firstNumber = firstNumber + "0";
+        }
     }
     else if ( touched === true) {
-        return secondNumber = secondNumber + "5";
+        if ( firstNumber == "0") {
+            return firstNumber = "0";
+        }
+        else {
+            return firstNumber = firstNumber + "0";
+        }
     }
 });
 let six = document.querySelector("#six");
 six.addEventListener("click", () => {
     if ( touched === false ) {
-        return firstNumber = firstNumber + "6";
+        if ( firstNumber == "0") {
+            return firstNumber = "0";
+        }
+        else {
+            return firstNumber = firstNumber + "0";
+        }
     }
     else if ( touched === true) {
-        return secondNumber = secondNumber + "6";
+        if ( firstNumber == "0") {
+            return firstNumber = "0";
+        }
+        else {
+            return firstNumber = firstNumber + "0";
+        }
     }
 });
 let seven = document.querySelector("#seven");
 seven.addEventListener("click", () => {
     if ( touched === false ) {
-        return firstNumber = firstNumber + "7";
+        if ( firstNumber == "0") {
+            return firstNumber = "0";
+        }
+        else {
+            return firstNumber = firstNumber + "0";
+        }
     }
     else if ( touched === true) {
-        return secondNumber = secondNumber + "7";
+        if ( firstNumber == "0") {
+            return firstNumber = "0";
+        }
+        else {
+            return firstNumber = firstNumber + "0";
+        }
     }
 });
 let eight = document.querySelector("#eight");
 eight.addEventListener("click", () => {
     if ( touched === false ) {
-        return firstNumber = firstNumber + "8";
+        if ( firstNumber == "0") {
+            return firstNumber = "0";
+        }
+        else {
+            return firstNumber = firstNumber + "0";
+        }
     }
     else if ( touched === true) {
-        return secondNumber = secondNumber + "8";
+        if ( firstNumber == "0") {
+            return firstNumber = "0";
+        }
+        else {
+            return firstNumber = firstNumber + "0";
+        }
     }
 });
 let nine = document.querySelector("#nine");
 nine.addEventListener("click", () => {
     if ( touched === false ) {
-        return firstNumber = firstNumber + "9";
+        if ( firstNumber == "0") {
+            return firstNumber = "0";
+        }
+        else {
+            return firstNumber = firstNumber + "0";
+        }
     }
     else if ( touched === true) {
-        return secondNumber = secondNumber + "9";
+        if ( firstNumber == "0") {
+            return firstNumber = "0";
+        }
+        else {
+            return firstNumber = firstNumber + "0";
+        }
     }
 });
 
@@ -141,16 +244,28 @@ equal.addEventListener(("click"), () => {
 });
 function operate(firstNumber, secondNumber) {
     if ( operator == "+" ) {
-        return variableDisplay = Number(firstNumber) + Number(secondNumber);
+        variableDisplay = Number(firstNumber) + Number(secondNumber);
+        firstNumber = variableDisplay;
+        display.textContent = variableDisplay;
+        return disp.appendChild(display);
     }
     else if ( operator == "-" ) {
-        return variableDisplay = Number(firstNumber) - Number(secondNumber);
+        variableDisplay = Number(firstNumber) - Number(secondNumber);
+        firstNumber = variableDisplay;
+        display.textContent = variableDisplay;
+        return disp.appendChild(display);
     }
     else if ( operator == "*" ) {
-        return variableDisplay = Number(firstNumber) * Number(secondNumber);
+        variableDisplay = Number(firstNumber) * Number(secondNumber);
+        firstNumber = variableDisplay;
+        display.textContent = variableDisplay;
+        return disp.appendChild(display);
     }
     else if ( operator == "/" ) {
-        return variableDisplay = Number(firstNumber) / Number(secondNumber);
+        variableDisplay = Number(firstNumber) / Number(secondNumber);
+        firstNumber = variableDisplay;
+        display.textContent = variableDisplay;
+        return disp.appendChild(display);
     }
 };
 
