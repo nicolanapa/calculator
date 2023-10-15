@@ -1,0 +1,1 @@
+Repository of a calculator project
