@@ -12,18 +12,18 @@ let zero = document.querySelector("#zero");
 zero.addEventListener("click", () => {
     if ( touched == false ) {
         if ( firstNumber == "0") {
-            return firstNumber = "0";
+            firstNumber = "0";
         }
         else {
-            return firstNumber = firstNumber + "0";
+            firstNumber = firstNumber + "0";
         }
     }
     else if ( touched == true) {
         if ( secondNumber == "0") {
-            return secondNumber = "0";
+            secondNumber = "0";
         }
         else {
-            return secondNumber = secondNumber + "0";
+            secondNumber = secondNumber + "0";
         }
     }
 });
@@ -31,18 +31,18 @@ let one = document.querySelector("#one");
 one.addEventListener("click", () => {
     if ( touched === false ) {
         if ( firstNumber == "0") {
-            return firstNumber = "1";
+            firstNumber = "1";
         }
         else {
-            return firstNumber = firstNumber + "1";
+            firstNumber = firstNumber + "1";
         }
     }
     else if ( touched === true) {
         if ( secondNumber == "0") {
-            return secondNumber = "1";
+            secondNumber = "1";
         }
         else {
-            return secondNumber = secondNumber + "1";
+            secondNumber = secondNumber + "1";
         }
     }
 });
@@ -50,18 +50,18 @@ let two = document.querySelector("#two");
 two.addEventListener("click", () => {
     if ( touched === false ) {
         if ( firstNumber == "0") {
-            return firstNumber = "2";
+            firstNumber = "2";
         }
         else {
-            return firstNumber = firstNumber + "2";
+            firstNumber = firstNumber + "2";
         }
     }
     else if ( touched === true) {
         if ( secondNumber == "0") {
-            return secondNumber = "2";
+            secondNumber = "2";
         }
         else {
-            return secondNumber = secondNumber + "2";
+            secondNumber = secondNumber + "2";
         }
     }
 });
@@ -69,18 +69,18 @@ let three = document.querySelector("#three");
 three.addEventListener("click", () => {
     if ( touched === false ) {
         if ( firstNumber == "0") {
-            return firstNumber = "3";
+            firstNumber = "3";
         }
         else {
-            return firstNumber = firstNumber + "3";
+            firstNumber = firstNumber + "3";
         }
     }
     else if ( touched === true) {
         if ( secondNumber == "0") {
-            return secondNumber = "3";
+            secondNumber = "3";
         }
         else {
-            return secondNumber = secondNumber + "3";
+            secondNumber = secondNumber + "3";
         }
     }
 });
@@ -88,18 +88,18 @@ let four = document.querySelector("#four");
 four.addEventListener("click", () => {
     if ( touched === false ) {
         if ( firstNumber == "0") {
-            return firstNumber = "4";
+            firstNumber = "4";
         }
         else {
-            return firstNumber = firstNumber + "4";
+            firstNumber = firstNumber + "4";
         }
     }
     else if ( touched === true) {
         if ( secondNumber == "0") {
-            return secondNumber = "4";
+            secondNumber = "4";
         }
         else {
-            return secondNumber = secondNumber + "4";
+            secondNumber = secondNumber + "4";
         }
     }
 });
@@ -107,18 +107,18 @@ let five = document.querySelector("#five");
 five.addEventListener("click", () => {
     if ( touched === false ) {
         if ( firstNumber == "0") {
-            return firstNumber = "5";
+            firstNumber = "5";
         }
         else {
-            return firstNumber = firstNumber + "5";
+            firstNumber = firstNumber + "5";
         }
     }
     else if ( touched === true) {
         if ( secondNumber == "0") {
-            return secondNumber = "5";
+            secondNumber = "5";
         }
         else {
-            return secondNumber = secondNumber + "5";
+            secondNumber = secondNumber + "5";
         }
     }
 });
@@ -126,18 +126,18 @@ let six = document.querySelector("#six");
 six.addEventListener("click", () => {
     if ( touched === false ) {
         if ( firstNumber == "0") {
-            return firstNumber = "6";
+            firstNumber = "6";
         }
         else {
-            return firstNumber = firstNumber + "6";
+            firstNumber = firstNumber + "6";
         }
     }
     else if ( touched === true) {
         if ( secondNumber == "0") {
-            return secondNumber = "6";
+            secondNumber = "6";
         }
         else {
-            return secondNumber = secondNumber + "6";
+            secondNumber = secondNumber + "6";
         }
     }
 });
@@ -145,18 +145,18 @@ let seven = document.querySelector("#seven");
 seven.addEventListener("click", () => {
     if ( touched === false ) {
         if ( firstNumber == "0") {
-            return firstNumber = "7";
+            firstNumber = "7";
         }
         else {
-            return firstNumber = firstNumber + "7";
+            firstNumber = firstNumber + "7";
         }
     }
     else if ( touched === true) {
         if ( secondNumber == "0") {
-            return secondNumber = "7";
+            secondNumber = "7";
         }
         else {
-            return secondNumber = secondNumber + "7";
+            secondNumber = secondNumber + "7";
         }
     }
 });
@@ -164,18 +164,18 @@ let eight = document.querySelector("#eight");
 eight.addEventListener("click", () => {
     if ( touched === false ) {
         if ( firstNumber == "0") {
-            return firstNumber = "8";
+            firstNumber = "8";
         }
         else {
-            return firstNumber = firstNumber + "8";
+            firstNumber = firstNumber + "8";
         }
     }
     else if ( touched === true) {
         if ( secondNumber == "0") {
-            return secondNumber = "8";
+            secondNumber = "8";
         }
         else {
-            return secondNumber = secondNumber + "8";
+            secondNumber = secondNumber + "8";
         }
     }
 });
@@ -183,18 +183,18 @@ let nine = document.querySelector("#nine");
 nine.addEventListener("click", () => {
     if ( touched === false ) {
         if ( firstNumber == "0") {
-            return firstNumber = "9";
+            firstNumber = "9";
         }
         else {
-            return firstNumber = firstNumber + "9";
+            firstNumber = firstNumber + "9";
         }
     }
     else if ( touched === true) {
         if ( secondNumber == "0") {
-            return secondNumber = "9";
+            secondNumber = "9";
         }
         else {
-            return secondNumber = secondNumber + "9";
+            secondNumber = secondNumber + "9";
         }
     }
 });
@@ -238,28 +238,28 @@ function operate(firstNumber, secondNumber) {
         firstNumber = variableDisplay;
         display.textContent = variableDisplay;
         touched = true;
-        return disp.appendChild(display);
+        secondNumber = "0";
     }
     else if ( operator == "-" ) {
         variableDisplay = Number(firstNumber) - Number(secondNumber);
         firstNumber = variableDisplay;
         display.textContent = variableDisplay;
         touched = true;
-        return disp.appendChild(display);
+        secondNumber = "0";
     }
     else if ( operator == "*" ) {
         variableDisplay = Number(firstNumber) * Number(secondNumber);
         firstNumber = variableDisplay;
         display.textContent = variableDisplay;
         touched = true;
-        return disp.appendChild(display);
+        secondNumber = "0";
     }
     else if ( operator == "/" ) {
         variableDisplay = Number(firstNumber) / Number(secondNumber);
         firstNumber = variableDisplay;
         display.textContent = variableDisplay;
         touched = true;
-        return disp.appendChild(display);
+        secondNumber = "0";
     }
 };
 
@@ -269,5 +269,6 @@ clear.addEventListener(("click"), () => {
     secondNumber = "0";
     touched = false;
     variableDisplay = "0";
+    disp.appendChild(display);
 });
 display.textContent = variableDisplay;
