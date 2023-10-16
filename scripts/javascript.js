@@ -228,39 +228,43 @@ divides.addEventListener(("click"), () => {
 
 let equal = document.querySelector("#equal");
 equal.addEventListener(("click"), () => {
+    console.log("firstNum: ", firstNumber, "2ndNum: ", secondNumber, "op: ", operator, "variableDisplay: ", variableDisplay);
     operate(firstNumber, secondNumber);
+    console.log("firstNum: ", firstNumber, "2ndNum: ", secondNumber, "op: ", operator, "variableDisplay: ", variableDisplay);
     return variableDisplay;
-
 });
-function operate(firstNumber, secondNumber) {
+function operate(firstNum, secondNum) {
+    console.log("firstNum: ", firstNumber, "2ndNum: ", secondNumber, "op: ", operator, "variableDisplay: ", variableDisplay);
     if ( operator == "+" ) {
-        variableDisplay = Number(firstNumber) + Number(secondNumber);
+        variableDisplay = Number(firstNum) + Number(secondNum);
         firstNumber = variableDisplay;
         display.textContent = variableDisplay;
         touched = true;
         secondNumber = "0";
     }
     else if ( operator == "-" ) {
-        variableDisplay = Number(firstNumber) - Number(secondNumber);
+        variableDisplay = Number(firstNum) - Number(secondNum);
         firstNumber = variableDisplay;
         display.textContent = variableDisplay;
         touched = true;
         secondNumber = "0";
+        
     }
     else if ( operator == "*" ) {
-        variableDisplay = Number(firstNumber) * Number(secondNumber);
+        variableDisplay = Number(firstNum) * Number(secondNum);
         firstNumber = variableDisplay;
         display.textContent = variableDisplay;
         touched = true;
         secondNumber = "0";
     }
     else if ( operator == "/" ) {
-        variableDisplay = Number(firstNumber) / Number(secondNumber);
+        variableDisplay = Number(firstNum) / Number(secondNum);
         firstNumber = variableDisplay;
         display.textContent = variableDisplay;
         touched = true;
         secondNumber = "0";
     }
+    console.log("firstNum: ", firstNumber, "2ndNum: ", secondNumber, "op: ", operator, "variableDisplay: ", variableDisplay);
 };
 
 let clear = document.querySelector("#clear");
