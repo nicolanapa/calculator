@@ -1,9 +1,96 @@
 * {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(228, 228, 222);
 }
 
-#display {
+#disp {
+    display: flex;
+    justify-content: center;
     border-radius: 30px;
     background-color: darkgray;
+    color: black;
     padding: 5px;
+    margin: 20px 0 20px 10px;
+    font-size: 30px;
+    height: 40px;
+    width: 480px;
+}
+
+#div-disp {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+#zero,
+#one,
+#two,
+#three,
+#four,
+#five,
+#six,
+#seven,
+#eight,
+#nine,
+#plus,
+#minus,
+#multiple,
+#divides,
+#equal,
+#clear {
+    background-color: rgb(26, 28, 24);
+    color: #D0BCFF;
+    font-size: 34px;
+    padding: 25px 0 0 38px;
+    width: 100px;
+    height: 100px;
+    border-radius: 60px;
+    margin: 12px;
+    display: flex;
+}
+
+#plus {
+    background-color: rgb(87, 93, 81);
+    padding: 25px 0 0 36px;
+}
+
+#minus {
+    background-color: rgb(86, 92, 82);
+    padding: 25px 0 0 41px;
+}
+
+#multiple {
+    background-color: rgb(57, 57, 6);
+    padding: 25px 0 0 41px;
+}
+
+#divides {
+    background-color: rgb(61, 61, 1);;
+    padding: 25px 0 0 41px;
+}
+
+#equal {
+    width: 165px;
+}
+
+#clear {
+    width: 300px;
+    justify-content: center;
+    padding: 25px 0 0 5px;
+}
+
+#div-on {
+    display: flex;
+}
+
+#div-tw {
+    display: flex;
+}
+
+#div-th {
+    display: flex;
+}
+
+#div-fo {
+    display: flex;
 }

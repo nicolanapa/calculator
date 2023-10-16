@@ -6,7 +6,6 @@ let variableDisplay = "0";
 let touched = false;
 display = document.querySelector("#disp");
 display = document.createElement("div");
-
 disp.appendChild(display);
 let zero = document.querySelector("#zero");
 zero.addEventListener("click", () => {
