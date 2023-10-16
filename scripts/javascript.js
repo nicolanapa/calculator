@@ -228,13 +228,13 @@ divides.addEventListener(("click"), () => {
 
 let equal = document.querySelector("#equal");
 equal.addEventListener(("click"), () => {
-    //console.log("firstNum: ", firstNumber, "2ndNum: ", secondNumber, "op: ", operator, "variableDisplay: ", variableDisplay);
+    console.log("EQUAL BEFORE: firstNum: ", firstNumber, "2ndNum: ", secondNumber, "op: ", operator, "variableDisplay: ", variableDisplay);
     operate(firstNumber, secondNumber);
-    //console.log("firstNum: ", firstNumber, "2ndNum: ", secondNumber, "op: ", operator, "variableDisplay: ", variableDisplay);
+    console.log("EQUAL AFTER: firstNum: ", firstNumber, "2ndNum: ", secondNumber, "op: ", operator, "variableDisplay: ", variableDisplay);
     return variableDisplay;
 });
 function operate(firstNum, secondNum) {
-    //console.log("firstNum: ", firstNumber, "2ndNum: ", secondNumber, "op: ", operator, "variableDisplay: ", variableDisplay);
+    console.log("OPERATE BEFORE: firstNum: ", firstNumber, "2ndNum: ", secondNumber, "op: ", operator, "variableDisplay: ", variableDisplay);
     if ( operator == "+" ) {
         variableDisplay = Number(firstNum) + Number(secondNum);
         firstNumber = variableDisplay;
@@ -264,7 +264,7 @@ function operate(firstNum, secondNum) {
         touched = true;
         secondNumber = "0";
     }
-    //console.log("firstNum: ", firstNumber, "2ndNum: ", secondNumber, "op: ", operator, "variableDisplay: ", variableDisplay);
+    console.log("OPERATE AFTER: firstNum: ", firstNumber, "2ndNum: ", secondNumber, "op: ", operator, "variableDisplay: ", variableDisplay);
 };
 
 let clear = document.querySelector("#clear");
