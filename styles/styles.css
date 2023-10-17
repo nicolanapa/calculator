@@ -10,7 +10,7 @@
     background-color: darkgray;
     color: black;
     padding: 5px;
-    margin: 20px 0 20px 10px;
+    margin: 20px 0 20px 12px;
     font-size: 30px;
     height: 40px;
     width: 480px;
@@ -93,4 +93,11 @@
 
 #div-fo {
     display: flex;
+}
+
+.calc {
+    border: 15px solid black;
+    border-radius: 40px;
+    background-color: #d1b0ff;
+    width: 640px;
 }
